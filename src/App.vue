@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TheHeader />
+  <TheList />
+  <p class="signature">Made on VUE.js</p>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from "./components/TheHeader.vue";
+import TheList from "./components/TheList";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TheHeader,
+    TheList,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style lang="scss">
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: "Poppins", sans-serif;
+//   background-color: #ebfdfd;
+// }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.signature {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(#2b283a, 0.25);
+  margin-bottom: 20px;
 }
 </style>
